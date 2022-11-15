@@ -26,7 +26,7 @@ Following are some network representations:
         ```
 
     * Ubuntu 18.04.2
-Base on this [website](https://gist.github.com/rain1024/98dd5e2c6c8c28f9ea9d), please install the following packages.
+    Base on this [website](https://gist.github.com/rain1024/98dd5e2c6c8c28f9ea9d), please install the following packages.
         ```
         sudo apt-get install texlive-latex-base
         sudo apt-get install texlive-fonts-recommended
@@ -97,5 +97,29 @@ Now, run the program as follows:
 
     bash ../tikzmake.sh my_arch
 
+## Modify
 
+在Windows环境下运行脚本时，会出现```../tikzmake.sh: line 13: xdg-open: command not found```这样的错误，因此对脚本进行如下修改。
 
+![sh_modify](images/sh_modify.png)
+
+源代码仅支持filter尺寸为正方形的网络显示，尽管通过 ```height=48, depth=48```可以修改宽和高，但修改的也仅仅是显示效果，实际特征图尺寸仍为正方形，这样输出的网络图如下图所示，该网络图还存在如下问题：
+
+* 特征图尺寸显示在边角，在我看来不够美观；
+* 无法显示池化层特征图信息；
+
+![origin_net](images/origin_net.png)
+
+为了解决上述问题，对layers/Box.sty和pycore/tikzeng.py进行修改，对比图如下所示：
+
+> Box.sty
+
+![layers/Box.sty](images/Box_modify.png)
+
+> tikzeng.py
+
+![pycore/tikzeng.py](images/tikzeng_modify.png)
+
+经过上述修改后，输出网络图如下所示，***由于使用需要，我只修改了卷积层和池化层的代码***
+
+![modify_net](images/modify_net.png)
