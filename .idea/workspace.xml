@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="776fe343-0ed9-4619-bd19-7a1b6f20e48a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layers/Box.sty" beforeDir="false" afterPath="$PROJECT_DIR$/layers/Box.sty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pycore/tikzeng.py" beforeDir="false" afterPath="$PROJECT_DIR$/pycore/tikzeng.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyexamples/test_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyexamples/test_simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tikzmake.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tikzmake.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +92,17 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.sty" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PlotNeuralNet$unet.coverage" NAME="unet 覆盖结果" MODIFIED="1666355757403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyexamples" />
